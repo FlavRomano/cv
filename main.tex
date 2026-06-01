@@ -62,10 +62,10 @@
     -1pt
 }{
     % top space:
-    0.3 cm
+    0.15 cm
 }{
     % bottom space:
-    0.2 cm
+    0.1 cm
 } % section title spacing
 
 \renewcommand\labelitemi{$\vcenter{\hbox{\small$\bullet$}}$} % custom bullet points
@@ -152,211 +152,140 @@
 
 \begin{document}
 \newcommand{\AND}{\unskip
-	\cleaders\copy\ANDbox\hskip\wd\ANDbox
-	\ignorespaces
+    \cleaders\copy\ANDbox\hskip\wd\ANDbox
+    \ignorespaces
 }
 \newsavebox\ANDbox
 \sbox\ANDbox{$|$}
 
 \begin{header}
-	\fontsize{25 pt}{25 pt}\selectfont Flavio Romano
-	
-	\vspace{5 pt}
-	
-	\normalsize
-	\mbox{Italy}%
-	\kern 5.0 pt%
-	\AND%
-	\kern 5.0 pt%
-	\mbox{\hrefWithoutArrow{mailto:flavromano@proton.me}{flavromano@proton.me}}%
-	\kern 5.0 pt%
-	\AND%
-	\kern 5.0 pt%
-	\mbox{\hrefWithoutArrow{https://www.linkedin.com/in/flavromano/}{linkedin.com/in/flavromano}}%
-	\kern 5.0 pt%
-	\AND%
-	\kern 5.0 pt%
-	\mbox{\hrefWithoutArrow{https://github.com/FlavRomano}{github.com/FlavRomano}}%
+    \fontsize{25 pt}{25 pt}\selectfont Flavio Romano
+
+    \vspace{5 pt}
+
+    \normalsize
+    \mbox{Italy}%
+    \kern 5.0 pt%
+    \AND%
+    \kern 5.0 pt%
+    \mbox{\hrefWithoutArrow{mailto:flavromano@proton.me}{flavromano@proton.me}}%
+    \kern 5.0 pt%
+    \AND%
+    \kern 5.0 pt%
+    \mbox{\hrefWithoutArrow{https://www.linkedin.com/in/flavromano/}{linkedin.com/in/flavromano}}%
+    \kern 5.0 pt%
+    \AND%
+    \kern 5.0 pt%
+    \mbox{\hrefWithoutArrow{https://github.com/FlavRomano}{github.com/FlavRomano}}%
 \end{header}
 
 \vspace{5 pt - 0.3 cm}
 
 \vspace{.4 cm}
 
-Software Engineer and Technical Lead specializing in backend systems, IAM solutions, and scalable cloud-native architectures. Experienced in leading cross-functional teams, designing distributed systems, and delivering enterprise-grade software in telecommunications and sustainability domains.
-
-Currently pursuing an MSc in Artificial Intelligence while working part-time at NTT DATA, strengthening a software engineering background with advanced AI and machine learning expertise. Passionate about applying AI to solve complex industrial problems at scale.
+Software Engineer and Technical Lead specializing in backend systems, IAM solutions, and cloud-native architectures. Currently pursuing an MSc in Artificial Intelligence while working at NTT DATA, combining enterprise software engineering experience with advanced AI and machine learning expertise.
 \section{Experience}
 
 \begin{twocolentry}{
-		\textbf{March 2024 – Present}
-	}
-	\textbf{Software Engineer}, NTT DATA -- Pisa, IT
+        March 2024 – Present
+    }
+    \textbf{Software Engineer / Technical Lead}, NTT DATA -- Pisa, IT
 \end{twocolentry}
 
 \vspace{0.10 cm}
 \begin{onecolentry}
-	
-	\textbf{Identity \& Access Management Platform (Telco Client)}
-	\hfill Aug 2024 -- May 2025
-	
-	\begin{highlights}
-		\item Contributed to the design and implementation of OAuth 2.0, OpenID Connect, and SAML-based authentication solutions for a leading Italian telecommunications provider.
-		
-		\item Enhanced a customized Keycloak deployment, enabling adoption of the Phantom Token architecture to improve security, scalability, and operational flexibility.
-		
-		\item Developed Spring Boot microservices supporting authorization workflows, including token introspection, redirect management, and third-party JWT/JWE processing.
-		
-		\item Collaborated within a 5-person engineering team delivering authentication and identity management capabilities across multiple enterprise portals.
-		
-	\end{highlights}
-	
-	\vspace{0.15 cm}
-	
-	\textbf{Logistics Data Processing Platform}
-	\hfill May 2025 -- Sep 2025
-	
-	\begin{highlights}
-		\item Designed and implemented Spring Batch jobs for large-scale shipment processing, handling hundreds of thousands of records through complex transformation and enrichment pipelines.
-		
-		\item Developed resilient batch-processing workflows with a focus on reliability, maintainability, and performance optimization.
-		
-	\end{highlights}
-	
-	\vspace{0.15 cm}
-	
-	\textbf{AI-powered Due Diligence Platform for Sustainability Compliance}
-	\hfill Sep 2025 -- Jan 2026
-	
-	\begin{highlights}
-		\item Served as Technical Lead for the development of an AI-powered platform designed to simplify the generation of due diligence documentation required by European import/export sustainability regulations.
-		
-		\item Coordinated a team of 4 engineers, managing task allocation, technical mentoring, and knowledge-transfer sessions.
-		
-		\item Designed and implemented backend services using Spring Boot, Redis caching, and optimized offset- and cursor-based pagination strategies to support large datasets efficiently.
-		
-		\item Worked closely with stakeholders to translate regulatory and business requirements into scalable software solutions.
-		
-	\end{highlights}
-	
-	\vspace{0.15 cm}
-	
-	\textbf{Corporate Sustainability \& CO$_2$ Emissions Assessment Platform}
-	\hfill Jan 2026 -- Present
-	
-	\begin{highlights}
-		\item Acting as Technical Lead for the development of a platform that estimates CO$_2$ emissions generated by software systems, hardware infrastructure, and AI workloads.
-		
-		\item Leading a team of 5 engineers, coordinating daily stand-ups, milestone planning, task assignment, code reviews, and technical decision-making.
-		
-		\item Serving as the primary technical point of contact for the client, gathering requirements and aligning technical deliverables with business objectives.
-		
-		\item Designing scalable backend services and data-processing workflows to support sustainability reporting and environmental impact assessment.
-		
-	\end{highlights}
-	
+    \begin{highlights}
+
+        \item Contributed to the design and implementation of OAuth 2.0, OpenID Connect, and SAML authentication solutions for a leading Italian telecommunications provider, enhancing a customized Keycloak deployment and enabling adoption of the Phantom Token architecture.
+
+        \item Developed Spring Boot microservices supporting authorization workflows, including token introspection, redirect management, and JWT/JWE processing.
+
+        \item Designed and implemented Spring Batch jobs for a large logistics client, processing hundreds of thousands of shipment records through complex transformation and enrichment pipelines.
+
+        \item Served as Technical Lead for the development of an AI-powered platform automating due diligence documentation for European sustainability regulations, coordinating a team of 4 engineers and leading technical decisions.
+
+        \item Currently leading a team of 5 engineers in the development of a sustainability platform for estimating CO$_2$ emissions generated by software systems, hardware infrastructure, and AI workloads.
+
+        \item Serve as the primary technical point of contact for the client, coordinating requirements gathering, milestone planning, daily stand-ups, code reviews, and technical decision-making.
+
+    \end{highlights}
 \end{onecolentry}
 
-\vspace{0.2 cm}
+\vspace{0.1 cm}
 
 \begin{twocolentry}{
-		\textbf{Dec 2023 – March 2024}
-	}
-	\textbf{Software Engineer Stage}, NTT DATA -- Pisa, IT
+        Dec 2023 – March 2024
+    }
+    \textbf{Software Engineer Intern}, NTT DATA -- Pisa, IT
 \end{twocolentry}
 
 \vspace{0.10 cm}
 \begin{onecolentry}
-	\begin{highlights}
-		\item Developed a Java microservice for the GreenIT ecosystem to collect hardware metrics and estimate Software Carbon Intensity (SCI) and CO$_2$ emissions on Google Cloud Platform infrastructures.
-		
-	\end{highlights}
+    \begin{highlights}
+        \item Developed a Java microservice for the GreenIT ecosystem to collect hardware metrics and estimate Software Carbon Intensity (SCI) and CO$_2$ emissions on Google Cloud Platform infrastructures.
+
+        \item Designed a configurable monitoring connector that later became the foundation of my Bachelor's thesis.
+    \end{highlights}
 \end{onecolentry}
 
 
 \section{Technical Skills}
 \begin{onecolentry}
-	\textbf{Programming languages:} Bash, C, Golang, Java, JS/TS, Python, SQL
-\end{onecolentry}
-        
-\vspace{0.2 cm}
-
-\begin{onecolentry}
-	\textbf{Framework:} Gin, Pandas, Selenium, Spring, SvelteKit, Pytorch, Keras
+    \textbf{Languages:} Java, Python, Go, TypeScript, SQL, Bash, C \\
+    \textbf{Backend:} Spring Boot, Spring Batch, Spring Security, Gin, RabbitMQ \\
+    \textbf{Cloud:} AWS, GCP, Kubernetes, Redis, Terraform \\
+    \textbf{AI/Data:} PyTorch, Keras, Scikit-learn, Pandas, Optuna \\
+    \textbf{Security:} OAuth 2.0, OpenID Connect, SAML, Keycloak
 \end{onecolentry}
 
-\vspace{0.2 cm}
 
-\begin{onecolentry}
-	\textbf{Cloud provider:} AWS, GCP
-\end{onecolentry}
-
-\section{Projects}      
+\section{Projects}
 
 \begin{twocolentry}{
-		Apr 2026 – May 2026
-	}
-	\textbf{Encoding Classification using LSTM} (\href{https://github.com/FlavRomano/encoding-classifier-lstm}{github})
+        Apr 2026 – May 2026
+    }
+    \textbf{Encoding Classification using LSTM} (\href{https://github.com/FlavRomano/encoding-classifier-lstm}{github})
 \end{twocolentry}
 
 \begin{highlights}
-	\item Developed a PyTorch-based sequence classification model to automatically identify the encoding algorithm applied to a text string, distinguishing between Caesar Cipher, ROT13, and MD5 transformations.
-	
-	\item Built and trained an LSTM neural network with approximately 230k trainable parameters using a dataset of more than 72,000 samples derived from English-language anagrams.
-	
-	\item Designed an NLP preprocessing pipeline based on token embeddings and sequence padding, achieving 97.99% test accuracy on unseen data.
-	
-	\item Implemented automated training and inference workflows, enabling real-time prediction of encoding types from arbitrary input strings.
+    \item Developed a PyTorch-based sequence classification model to automatically identify the encoding algorithm applied to a text string, distinguishing between Caesar Cipher, ROT13, and MD5 transformations.
+
+    \item Built and trained a 230k-parameter LSTM model on a dataset of 72,000+ samples, achieving 97.99\% test accuracy through token embedding and sequence preprocessing.
+
+    \item Implemented automated training and inference workflows, enabling real-time prediction of encoding types from arbitrary input strings.
 \end{highlights}
 
-
+\vspace{0.1 cm}
 \begin{twocolentry}{
-		Oct 2025 – Jan 2026
-	}
-	\textbf{Multi-output Regression for Noisy Datasets}
-\end{twocolentry}
+        Aug 2023 - Dec 2023
+    }
+    \textbf{Coinquilining} (\href{https://github.com/FlavRomano/coinquilining}{github})\end{twocolentry}
 
 \vspace{0.10 cm}
 \begin{onecolentry}
-	\begin{highlights}
-		\item Developed a deep learning pipeline for a multi-output regression task using a highly noisy dataset. Achieved significant error reduction on the test set through rigorous data preprocessing and feature engineering.
-		\item Conducted systematic model selection and hyperparameter tuning using Optuna, comparing various Neural Network architectures implemented with Keras and Scikit-learn.
-		\item Performed a robust final model assessment to ensure generalization, earning high marks for the methodological approach in the Machine Learning graduate course.
-	\end{highlights}
+    \begin{highlights}
+        \item Developed a Progressive Web Application for roommate management, featuring inventory tracking, expense sharing, recipe suggestions, and task scheduling.
+    \end{highlights}
 \end{onecolentry}
-\vspace{0.2 cm}
+
+\section{Education}
+
 \begin{twocolentry}{
-		Aug 2023 - Dec 2023
-	}
-	\textbf{Coinquilining} (\href{https://github.com/FlavRomano/coinquilining}{github})\end{twocolentry}
-	
-	\vspace{0.10 cm}
-	\begin{onecolentry}
-		\begin{highlights}
-			\item Developed from scratch as final project for the "Web App Development" course, earning a top grade (30/30). Coinquilining is a PWA for managing roommate life, featuring shared fridge and pantry management, expense tracking, and recipe suggestions.
-			\item Implemented expiration tracking with notifications, ingredient-based recipe searches using Puppeteer to scrape a dynamic site, and a calendar for fair task distribution (time shift problem).
-			\item Tech Stack: Supabase, TypeScript, SvelteKit, Tailwind CSS, Puppeteer
-		\end{highlights}
-	\end{onecolentry}
-	
-	\section{Education}
-	
-	\begin{twocolentry}{
-			Sept 2025 – Present
-		}
-		\textbf{University of Pisa}, Master of Science (MSc) in Artificial Intelligence \end{twocolentry}
-		
-		\vspace{0.10 cm}
-		\begin{twocolentry}{
-				Sept 2020 – May 2024
-			}
-			\textbf{University of Pisa}, Bachelor of Computer Science\end{twocolentry}
-			
-			\vspace{0.10 cm}
-			\begin{onecolentry}
-				\begin{highlights}
-					\item \textbf{Thesis:} Development of a configurable connector to monitoring SCI and CO2 emissions of GreenIT® Google Cloud Platform components.
-				\end{highlights}
-			\end{onecolentry}
-			
+        Sept 2025 – Present
+    }
+    \textbf{University of Pisa}, Master of Science (MSc) in Artificial Intelligence \end{twocolentry}
+
+\vspace{0.10 cm}
+\begin{twocolentry}{
+        Sept 2020 – May 2024
+    }
+    \textbf{University of Pisa}, Bachelor of Computer Science\end{twocolentry}
+
+\vspace{0.10 cm}
+\begin{onecolentry}
+    \begin{highlights}
+        \item \textbf{Thesis:} Development of a configurable connector for monitoring SCI and CO2 emissions of GreenIT® Google Cloud Platform components.
+    \end{highlights}
+\end{onecolentry}
+
 \end{document}
